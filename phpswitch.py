@@ -1,5 +1,22 @@
-"""
-usage: phpswitch <version>
+r"""
+------------------------------------
+| USAGE
+------------------------------------
+$ phpswitch <version>
+
+------------------------------------
+| SETUP
+------------------------------------
+1. Create a folder named 'PHP' in C: drive
+2. Download PHP versions from https://windows.php.net/download/ and extract them in the 'PHP' folder like this:
+    - C:\PHP\74
+    - C:\PHP\81
+    - C:\PHP\83
+
+------------------------------------
+| AVAILABLE VERSIONS
+------------------------------------
+Found at C:\PHP
 """
 
 #########################################################
@@ -50,7 +67,6 @@ def main():
     # if no args, print help
     if len(sys.argv) < 2:
         print(__doc__)
-        print('versions:')
         for v in get_php_versions():
             print(' - ' + v)
         return
